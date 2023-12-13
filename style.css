@@ -34,8 +34,10 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-
-  background-color: #f7ead7;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(247,234,215,1) 100%); 
+  /* gradient from https://cssgradient.io/
+  */
 }
 header {
   padding-top: 10px;
@@ -70,7 +72,6 @@ header {
   font-size: 1.5rem;
 }
 .skillsGrid{
-  
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -121,16 +122,215 @@ header {
   border-radius: 10px;
   text-align: center;
 }
-.amyImg{
-  width: 350px;
-  border-radius: 25px;
-}
+
 .aboutMe {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  justify-content: space-between;
   padding-left: 200px;
   padding-right: 200px;
   padding-top: 100px;
   padding-bottom: 100px;
+  
+}
+.amyImg{
+ 
+  border-radius: 25px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.aboutMeHeading {
+  font-size: 2rem;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+}
+.aboutMeDescription {
+  font-size: 1rem;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+}
+.abtB {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  color: white;
+  background-color: #000000;
+  border: none;
+  border-radius: 12px;
+}
+.abtB:hover {
+  background-color: #797979;
+}
+.headerButton:hover {
+  background-color: #797979;
+}
+
+.wrkH {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.work1 {
+  width: 300px; 
+  height: 300px; 
+  object-fit: cover;
+  border-style: solid;
+  
+}
+.work2 {
+  width: 300px; 
+  height: 300px; 
+  object-fit: cover;
+  border-style: solid;
+}
+.work3 {
+  width: 300px; 
+  height: 300px; 
+  object-fit: cover;
+  border-style: solid;
+}
+.work4 {
+  width: 300px; 
+  height: 300px; 
+  object-fit: cover;
+  border-style: solid;
+}
+.works {
+  padding-left: 150px;
+  padding-right: 150px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.workstxt {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr ;
+}
+.wrk1 {
+  grid-column-start: 2; 
+}
+.wrk2 {
+  grid-column-start: 4; 
+}
+.wrk3 {
+  grid-column-start: 6; 
+}
+.wrk4 {
+  grid-column-start: 8; 
+}
+.tags {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding-bottom: 100px;
+}
+.t1 {
+  background-color: lightgray;
+  border-radius: 10px;
+  grid-column-start: 4; 
+  text-align: center;
+}
+.t2 {
+  background-color: lightgray;
+  border-radius: 10px;
+  grid-column-start: 6; 
+  text-align: center;
+}
+.t3 {
+  background-color: lightgray;
+  border-radius: 10px;
+  grid-column-start: 9; 
+  text-align: center;
+}
+.t4 {
+  background-color: lightgray;
+  border-radius: 10px;
+  grid-column-start: 11; 
+  text-align: center;
+}
+.t5 {
+  background-color: lightgray;
+  border-radius: 10px;
+  grid-column-start: 14; 
+  text-align: center;
+}
+.t6 {
+  background-color: lightgray;
+  border-radius: 10px;
+  grid-column-start: 16; 
+  text-align: center;
+}
+.t7 {
+  background-color: lightgray;
+  border-radius: 10px;
+  grid-column-start: 18; 
+  text-align: center;
+}
+.t8 {
+  background-color: lightgray;
+  border-radius: 10px;
+  grid-column-start: 20; 
+  text-align: center;
+}
+.t9 {
+  background-color: lightgray;
+  border-radius: 10px;
+  grid-column-start: 22; 
+  text-align: center;
+}
+.contact {
+  background-color: #cdb4db;
+  border-radius: 25px;
+  margin-left: 200px;
+  margin-right: 200px;
+  
+}
+.cHeading {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 2rem;
+  padding-left: 15px;
+}
+.cPar {
+  padding-bottom: 30px;
+  padding-left: 15px;
+}
+.cBut {
+  margin-left: 15px;
+  height: 50px;
+  width: 100px;
+  color: white;
+  background-color: #000000;
+  border: none;
+  border-radius: 12px;
+}
+.cBut:hover {
+  background-color: #797979;
+}
+.cborderextention {
+  padding-bottom: 16px;
+  color: #cdb4db;
+}
+.footerImg {
+  width: 40px;
+}
+footer {
+  border-top: 3px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.ftr {
+  margin-top: 100px;
 }
 /*
  * SR-ONLY
