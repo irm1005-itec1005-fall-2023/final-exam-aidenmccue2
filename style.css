@@ -58,7 +58,7 @@ header {
   background-color: #000000;
   border: none;
   border-radius: 12px;
-  grid-column-start: 8
+  grid-column-start: 8;
 }
 .hero {
   padding-top:100px;
@@ -89,7 +89,6 @@ header {
   background-color: #cdb4db;
   border-radius: 10px;
   text-align: center;
-  text-align: 
 }
 .it2 {
   background-color: #ffc8dd;
