@@ -61,12 +61,76 @@ header {
 .hero {
   padding-top:100px;
   text-align: center;
+  padding-bottom: 100px;
 }
 .heroHeading {
   font-size: 4rem;
 }
 .heroParagraph {
   font-size: 1.5rem;
+}
+.skillsGrid{
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+  height: 150px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.it1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: #cdb4db;
+  border-radius: 10px;
+  text-align: center;
+  text-align: 
+}
+.it2 {
+  background-color: #ffc8dd;
+  border-radius: 10px;
+  text-align: center;
+}
+.it3 {
+  background-color: #bde0fe;
+  border-radius: 10px;
+  text-align: center;
+}
+.it4 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  background-color: #a2d2ff;
+  border-radius: 10px;
+  text-align: center;
+}
+.it5 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  background-color: #a2d2ff;
+  border-radius: 10px;
+  text-align: center;
+}
+.it6 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  background-color: #ffafcc;
+  border-radius: 10px;
+  text-align: center;
+}
+.amyImg{
+  width: 350px;
+  border-radius: 25px;
+}
+.aboutMe {
+  display: flex;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 /*
  * SR-ONLY
